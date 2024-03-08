@@ -1,0 +1,52 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Banking4W\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-06 16:29+0100\n"
+"PO-Revision-Date: 2024-02-06 16:57+0100\n"
+"Language-Team: Rainer Brell \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.7\n"
+"Last-Translator: Rainer Brell <nvda@brell.net>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: de\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#. Translators: if is runing a older version.
+#: topbanking.py:41
+#, python-format
+msgid ""
+"You are using version %s. This customization is intended for Banking4 "
+"version 8. \n"
+"Press Escape to close this message."
+msgstr ""
+"Sie verwenden Version %s. Diese Anpassung ist für Banking4 Version 8 "
+"vorgesehen. \\n\n"
+"Drücken Sie Escape, um diese Nachricht zu schließen."
+
+#. Translators: title of the browser dialog
+#: topbanking.py:44
+msgid "Note - NVDA AddOn for Banking4 Version 8"
+msgstr "Hinweis – NVDA AddOn für Banking4 Version 8"
+
+#. Translators: Name of the cell, the column Header
+#: topbanking.py:61
+msgid "Name of the cell"
+msgstr "Name der Zelle"
+
+#. Translators: Number of the row, the current line
+#: topbanking.py:73
+msgid "number of the row"
+msgstr "Nummer und Inhalt der Zeile"
+
+#. Translators: Only the name "Row"
+#: topbanking.py:84
+msgid "Row "
+msgstr "Zeile"
