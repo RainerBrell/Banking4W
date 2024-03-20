@@ -6,13 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
+"Project-Id-Version: Banking4W\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-20 08:29+0100\n"
-"PO-Revision-Date: 2024-03-20 08:37+0100\n"
+"PO-Revision-Date: 2024-03-20 08:46+0100\n"
 "Last-Translator: Rainer Brell <nvda@brell.net>\n"
-"Language-Team: \n"
-"Language: de\n"
+"Language-Team: google Translator\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -29,7 +29,9 @@ msgstr "Banking4W - Topbanking"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 #: buildVars.py:26
 msgid "Improves navigation in the portfolio and turnover table."
-msgstr "Verbessert die Navigation in der Depot- und Umsatztabelle."
+msgstr ""
+"Améliore la navigation dans le tableau de portefeuille et de chiffre "
+"d'affaires."
 
 #. Translators: if is runing a older version.
 #: topbanking.py:39
@@ -39,26 +41,26 @@ msgid ""
 "version 8. \n"
 "Press Escape to close this message."
 msgstr ""
-"Sie verwenden Version %s. Diese Anpassung ist für Banking4 Version 8 "
-"vorgesehen. \\n\n"
-"Drücken Sie Escape, um diese Nachricht zu schließen."
+"Vous utilisez la version %s. Cette personnalisation est destinée à "
+"Banking4 version 8. \n"
+"Appuyez sur Échap pour fermer ce message."
 
 #. Translators: title of the browser dialog
 #: topbanking.py:42
 msgid "Note - NVDA AddOn for Banking4 Version 8"
-msgstr "Hinweis – NVDA AddOn für Banking4 Version 8"
+msgstr "Remarque - Module complémentaire NVDA pour Banking4 version 8"
 
 #. Translators: Name of the cell, the column Header
 #: topbanking.py:59
 msgid "Name of the cell"
-msgstr "Name der Zelle"
+msgstr "Nom de la cellule"
 
 #. Translators: Number of the row, the current line
 #: topbanking.py:71
 msgid "number of the row"
-msgstr "Zeilennummer"
+msgstr "numéro de la ligne"
 
 #. Translators: Only the name "Row"
 #: topbanking.py:82
 msgid "Row "
-msgstr "Zeile"
+msgstr "Rangée"

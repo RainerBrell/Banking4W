@@ -25,7 +25,7 @@ addon_info = {
 	# Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 	"addon_description": _("""Improves navigation in the portfolio and turnover table."""),
 	# version
-	"addon_version": "2024.03.08",
+	"addon_version": "2024.03.20",
 	# Author(s)
 	"addon_author": "Rainer Brell <nvda@brell.net>",
 	# URL for the add-on documentation support
