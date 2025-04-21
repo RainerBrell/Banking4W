@@ -6,17 +6,19 @@ Version : 8.3 or higher
  You can read the licence by clicking Help->Licence in the NVDA menu
  or by visiting http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 
-Note: This program is only available in german/english/french 
+Banking 4W is only available in german/english/french 
 Create  : 16. April 2020 by Rainer Brell <nvda@brell.net>
 Modify  : 16. mai 2020 / Grid navigation and gesture added 
 Modify  : 18. Mai 2020 / SWIFT Bank Name 
 Modify  : 05. August  2021 / for Version 7.7.1 (Grid edit customized to cell) 
 Modify  : 2.0 - 7. March 2023 / for 8.0 (works not longer under 7.x)
 modify  : 2024.03.08 - Made translatable and executable under 2024.1
+modify  : 2025.04.21 - Optimized Braille output  in the grid
 """ 
 
 import tones
 import api 
+import config 
 import ui
 import speech 
 import braille 
@@ -28,6 +30,12 @@ import addonHandler
 addonHandler.initTranslation()
 
 firstRun = False 
+
+def braileout_permanently(text):
+	showmessage = config.conf["braille"]["showMessages"]
+	config.conf["braille"]["showMessages"] = braille.ShowMessages.SHOW_INDEFINITELY
+	braille.handler.message(text)
+	config.conf["braille"]["showMessages"] = showmessage
 
 class AppModule(appModuleHandler.AppModule):
 
@@ -48,10 +56,8 @@ class AppModule(appModuleHandler.AppModule):
 		if obj.role == controlTypes.ROLE_UNKNOWN and obj.UIAElement.CurrentClassName == 'DataGridCell':
 			#tones.beep(300, 60)
 			speech.cancelSpeech()
-			obj.name = "" 
-			obj.value = obj.description.replace("\r\n", " ")
-			obj.description = ""
-			braille.handler.message(obj.value)
+			msg = obj.description.replace("\r\n", " ")
+			braileout_permanently(msg)
 		nextHandler()
 
 	@script(
@@ -62,7 +68,8 @@ class AppModule(appModuleHandler.AppModule):
 	def script_columneName(self, gesture):
 		obj = api.getFocusObject()
 		if obj.role == controlTypes.ROLE_UNKNOWN and obj.UIAElement.CurrentClassName == 'DataGridCell':
-			ui.message(obj.columnHeaderText)
+			msg = obj.columnHeaderText.split(" ")[0]
+			ui.message(msg)
 		else:
 			gesture.send()
 
