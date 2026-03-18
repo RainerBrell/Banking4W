@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Banking4W\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-20 08:29+0100\n"
+"Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
+"POT-Creation-Date: 2026-03-18 20:14+0100\n"
 "PO-Revision-Date: 2024-03-20 08:46+0100\n"
 "Last-Translator: Rainer Brell <nvda@brell.net>\n"
 "Language-Team: google Translator\n"
@@ -18,49 +18,58 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.4.2\n"
 
-#. Add-on summary, usually the user visible name of the addon.
-#. Translators: Summary for this add-on
-#. to be shown on installation and add-on information found in Add-ons Manager.
-#: buildVars.py:23
-msgid "Banking4W - Topbanking"
-msgstr "Banking4W - Topbanking"
-
-#. Add-on description
-#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-#: buildVars.py:26
-msgid "Improves navigation in the portfolio and turnover table."
-msgstr ""
-"Améliore la navigation dans le tableau de portefeuille et de chiffre "
-"d'affaires."
-
 #. Translators: if is runing a older version.
-#: topbanking.py:39
+#: addon\appModules\topbanking.py:47
 #, python-format
 msgid ""
 "You are using version %s. This customization is intended for Banking4 "
 "version 8. \n"
 "Press Escape to close this message."
 msgstr ""
-"Vous utilisez la version %s. Cette personnalisation est destinée à "
-"Banking4 version 8. \n"
+"Vous utilisez la version %s. Cette personnalisation est destinée à Banking4 "
+"version 8. \n"
 "Appuyez sur Échap pour fermer ce message."
 
 #. Translators: title of the browser dialog
-#: topbanking.py:42
+#: addon\appModules\topbanking.py:50
 msgid "Note - NVDA AddOn for Banking4 Version 8"
 msgstr "Remarque - Module complémentaire NVDA pour Banking4 version 8"
 
 #. Translators: Name of the cell, the column Header
-#: topbanking.py:59
+#: addon\appModules\topbanking.py:65
 msgid "Name of the cell"
 msgstr "Nom de la cellule"
 
 #. Translators: Number of the row, the current line
-#: topbanking.py:71
+#: addon\appModules\topbanking.py:78
 msgid "number of the row"
 msgstr "numéro de la ligne"
 
 #. Translators: Only the name "Row"
-#: topbanking.py:82
+#: addon\appModules\topbanking.py:89
 msgid "Row "
 msgstr "Rangée"
+
+#. Add-on summary/title, usually the user visible name of the add-on
+#. Translators: Summary/title for this add-on
+#. to be shown on installation and add-on information found in add-on store
+#: buildVars.py:21
+msgid "Banking4W - Topbanking"
+msgstr "Banking4W - Topbanking"
+
+#. Add-on description
+#. Translators: Long description to be shown for this add-on on add-on information from add-on store
+#: buildVars.py:24
+msgid "Improves navigation in the portfolio and turnover table."
+msgstr ""
+"Améliore la navigation dans le tableau de portefeuille et de chiffre "
+"d'affaires."
+
+#. Brief changelog for this version
+#. Translators: what's new content for the add-on version to be shown in the add-on store
+#: buildVars.py:29
+msgid ""
+"# new in 2026.03.18\n"
+"- Ready for NVDA 2026.1\n"
+"- New addon template used"
+msgstr ""
