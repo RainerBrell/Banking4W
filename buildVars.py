@@ -23,10 +23,12 @@ addon_info = AddonInfo(
 	# Translators: Long description to be shown for this add-on on add-on information from add-on store
 	addon_description=_("""Improves navigation in the portfolio and turnover table."""),
 	# version
-	addon_version="2026.03.18",
+	addon_version="2026.05.02",
 	# Brief changelog for this version
 	# Translators: what's new content for the add-on version to be shown in the add-on store
-	addon_changelog=_("""# new in 2026.03.18
+	addon_changelog=_("""# Version 2026.05.02
+- Stable version for 2026.1
+# Version 2026.03.18
 - Ready for NVDA 2026.1
 - New addon template used"""),
 		# Author(s)
@@ -38,7 +40,7 @@ addon_info = AddonInfo(
 	# Documentation file name
 	addon_docFileName="readme.html",
 	# Minimum NVDA version supported (e.g. "2019.3.0", minor version is optional)
-	addon_minimumNVDAVersion="2023.1",
+	addon_minimumNVDAVersion="2024.1",
 	# Last NVDA version supported/tested (e.g. "2024.4.0", ideally more recent than minimum version)
 	addon_lastTestedNVDAVersion="2026.1",
 	# Add-on update channel (default is None, denoting stable releases,
