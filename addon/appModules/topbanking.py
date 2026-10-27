@@ -14,6 +14,7 @@ Modify  : 05. August  2021 / for Version 7.7.1 (Grid edit customized to cell)
 Modify  : 2.0 - 7. March 2023 / for 8.0 (works not longer under 7.x)
 modify  : 2024.03.08 - Made translatable and executable under 2024.1
 modify  : 2025.04.21 - Optimized Braille output  in the grid
+modify  : 2026.10.27 - Optimized for NVDA 2026.3 
 """ 
 
 import tones
@@ -31,11 +32,14 @@ addonHandler.initTranslation()
 
 firstRun = False 
 
-def braileout_permanently(text):
-	showmessage = config.conf["braille"]["showMessages"]
-	config.conf["braille"]["showMessages"] = braille.ShowMessages.SHOW_INDEFINITELY
+def brailleout_permanently(text):
 	braille.handler.message(text)
-	config.conf["braille"]["showMessages"] = showmessage
+	try:
+		if braille.handler._messageCallLater:
+			braille.handler._messageCallLater.Stop()
+			braille.handler._messageCallLater = None
+	except Exception:
+		pass
 
 class AppModule(appModuleHandler.AppModule):
 
@@ -53,11 +57,14 @@ class AppModule(appModuleHandler.AppModule):
 			firstRun = True 
 
 	def event_gainFocus(self, obj, nextHandler):
-		if obj.role == controlTypes.ROLE_UNKNOWN and obj.UIAElement.CurrentClassName == 'DataGridCell':
-			#tones.beep(300, 60)
-			speech.cancelSpeech()
-			msg = obj.description.replace("\r\n", " ")
-			braileout_permanently(msg)
+		try:
+			if obj.role == controlTypes.ROLE_UNKNOWN and obj.UIAElement.CurrentClassName == 'DataGridCell':
+				#tones.beep(300, 60)
+				speech.cancelSpeech()
+				msg = obj.description.replace("\r\n", " ")
+				brailleout_permanently(msg)
+		except Exception:
+			pass
 		nextHandler()
 
 	@script(

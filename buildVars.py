@@ -23,11 +23,11 @@ addon_info = AddonInfo(
 	# Translators: Long description to be shown for this add-on on add-on information from add-on store
 	addon_description=_("""Improves navigation in the portfolio and turnover table."""),
 	# version
-	addon_version="2026.05.02",
+	addon_version="2026.10.27",
 	# Brief changelog for this version
 	# Translators: what's new content for the add-on version to be shown in the add-on store
-	addon_changelog=_("""# Version 2026.05.02
-- Stable version for 2026.1
+	addon_changelog=_("""# Version 2026.10.27
+- Optimized for NVDA 2026.3 
 # Version 2026.03.18
 - Ready for NVDA 2026.1
 - New addon template used"""),

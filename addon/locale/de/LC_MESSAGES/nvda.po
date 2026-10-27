@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
-"POT-Creation-Date: 2026-05-02 15:00+0200\n"
-"PO-Revision-Date: 2026-05-02 15:03+0200\n"
+"POT-Creation-Date: 2026-10-27 17:47+0100\n"
+"PO-Revision-Date: 2026-10-27 17:51+0100\n"
 "Last-Translator: Rainer Brell <nvda@brell.net>\n"
 "Language-Team: \n"
 "Language: de\n"
@@ -19,7 +19,7 @@ msgstr ""
 "X-Generator: Poedit 3.9\n"
 
 #. Translators: if is runing a older version.
-#: addon\appModules\topbanking.py:47
+#: addon\appModules\topbanking.py:51
 #, python-format
 msgid ""
 "You are using version %s. This customization is intended for Banking4 "
@@ -31,22 +31,22 @@ msgstr ""
 "Drücken Sie Escape, um diese Nachricht zu schließen."
 
 #. Translators: title of the browser dialog
-#: addon\appModules\topbanking.py:50
+#: addon\appModules\topbanking.py:54
 msgid "Note - NVDA AddOn for Banking4 Version 8"
 msgstr "Hinweis – NVDA AddOn für Banking4 Version 8"
 
 #. Translators: Name of the cell, the column Header
-#: addon\appModules\topbanking.py:65
+#: addon\appModules\topbanking.py:72
 msgid "Name of the cell"
 msgstr "Name der Zelle"
 
 #. Translators: Number of the row, the current line
-#: addon\appModules\topbanking.py:78
+#: addon\appModules\topbanking.py:85
 msgid "number of the row"
 msgstr "Zeilennummer"
 
 #. Translators: Only the name "Row"
-#: addon\appModules\topbanking.py:89
+#: addon\appModules\topbanking.py:96
 msgid "Row "
 msgstr "Zeile "
 
@@ -67,14 +67,14 @@ msgstr "Verbessert die Navigation in der Depot- und Umsatztabelle."
 #. Translators: what's new content for the add-on version to be shown in the add-on store
 #: buildVars.py:29
 msgid ""
-"# Version 2026.05.02\n"
-"- Stable version for 2026.1\n"
+"# Version 2026.10.27\n"
+"- Optimized for NVDA 2026.3 \n"
 "# Version 2026.03.18\n"
 "- Ready for NVDA 2026.1\n"
 "- New addon template used"
 msgstr ""
-"# Version 2026.05.02\n"
-"- Stabile Version für 2026.1\n"
+"# Version 2026.10.27\n"
+"- Optimiert für NVDA 2026.3\n"
 "# Version 2026.03.18\n"
 "- Bereit für NVDA 2026.1\n"
-"- Neue Addon-Vorlage verwendet"
+"- Neue Add-on-Vorlage verwendet"

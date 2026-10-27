@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Banking4W\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
-"POT-Creation-Date: 2026-05-02 15:00+0200\n"
+"POT-Creation-Date: 2026-10-27 17:47+0100\n"
 "PO-Revision-Date: 2024-02-06 16:59+0100\n"
 "Last-Translator: Rainer Brell <nvda@brell.net>\n"
 "Language-Team: Rainer Brell\n"
@@ -20,7 +20,7 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 
 #. Translators: if is runing a older version.
-#: addon\appModules\topbanking.py:47
+#: addon\appModules\topbanking.py:51
 #, python-format
 msgid ""
 "You are using version %s. This customization is intended for Banking4 "
@@ -29,22 +29,22 @@ msgid ""
 msgstr ""
 
 #. Translators: title of the browser dialog
-#: addon\appModules\topbanking.py:50
+#: addon\appModules\topbanking.py:54
 msgid "Note - NVDA AddOn for Banking4 Version 8"
 msgstr ""
 
 #. Translators: Name of the cell, the column Header
-#: addon\appModules\topbanking.py:65
+#: addon\appModules\topbanking.py:72
 msgid "Name of the cell"
 msgstr ""
 
 #. Translators: Number of the row, the current line
-#: addon\appModules\topbanking.py:78
+#: addon\appModules\topbanking.py:85
 msgid "number of the row"
 msgstr "number and content of the row"
 
 #. Translators: Only the name "Row"
-#: addon\appModules\topbanking.py:89
+#: addon\appModules\topbanking.py:96
 msgid "Row "
 msgstr ""
 
@@ -65,8 +65,8 @@ msgstr ""
 #. Translators: what's new content for the add-on version to be shown in the add-on store
 #: buildVars.py:29
 msgid ""
-"# Version 2026.05.02\n"
-"- Stable version for 2026.1\n"
+"# Version 2026.10.27\n"
+"- Optimized for NVDA 2026.3 \n"
 "# Version 2026.03.18\n"
 "- Ready for NVDA 2026.1\n"
 "- New addon template used"
